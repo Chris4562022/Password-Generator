@@ -7,14 +7,15 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var numSet = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialSet = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "?", "/", "-", ":", ";", "[", "]", "{", "}", ".", "<", ">", "=", "_", "`", "|", "~"];
 var arrayForPassword = [];
-// var generatedPasswordArr = [];
+
 
 function generatePassword(){
 console.log("generate password function");
 
 
-//get input values and validate
+//get input values and validate the answers
 
+//ask how many characters long the password should be
 var passwordLength = prompt("How long would you like your password to be?");
 console.log(passwordLength);
 
@@ -28,6 +29,8 @@ if (passwordLength > 128) {
   return
 }
 
+//ask if they'd like the below options for password
+
 var hasLowerCase = confirm("Do you want to include lowercase characters?");
 
 
@@ -40,13 +43,13 @@ var hasSpecialSet = confirm("Do you want to include special characters?");
 var hasUpperCase = confirm("Do you want to include uppercase characters");
   
 
-
+//if choices are not selected - they're prompted to choose at least one
 if (hasLowerCase == false && hasUpperCase == false && hasNumSet == false && hasSpecialSet == false) {
   alert("Please select at least one character type!");
   return
 }
 
-// group selected characters
+// at their choices to the array for password
 if (hasLowerCase) {
   arrayForPassword = arrayForPassword.concat(lowerCase);
 }
@@ -65,7 +68,7 @@ if (hasUpperCase) {
 
 
 
-// pick random cards out of new pool for length of password
+// this is where the characters are seleceted from the 'pool' of seleceted character options
 let passwordText = ""
 for (let i = 0; i < passwordLength; i++) {
   let rng =[Math.floor(Math.random() * arrayForPassword.length)];
