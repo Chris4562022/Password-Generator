@@ -14,7 +14,7 @@ Tools Used:
 ----------
 *JavaScript
  
- LInk to the Deployed Application:
+ Link to the Deployed Application:
  ----------------------------------
  
  
