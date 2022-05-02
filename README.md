@@ -2,11 +2,11 @@
 JavaScript Password Generator
 
 
-* This webpage demonstrates the JavaScript Password Generator.  On this webpage you'll find an application that will generate a secure password through a set of prompts.  You'll be able to select different parameters that you can choose to include in your password such as:
+* This webpage demonstrates the JavaScript Password Generator.  On this webpage you'll find an application that will generate a secure password through a set of prompts.  You'll be able to select different parameters that you can choose to include in your password such as
 
-How long would you like your password to be?
-Would you like to include special characters?
-Would you like to include uppercase characters?
+-How long would you like your password to be?
+-Would you like to include special characters?
+-Would you like to include uppercase characters?
 
 Tools Used:
 ----------
